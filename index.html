@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link href="ContactPageCSS.css" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="row">
+    <div class="col-md-12">
+    <header style="text-align: center;" aria-label="Header">
+        <h1>Contact Us</h1>
+        </div>
+        </div>
+    </header>
+    
+
+    <section aria-labelledby="sectionTitle">
+        <h2 id="sectionTitle">Get in Touch</h2>
+        <p>Contact our Customer Service by submitting your query in the form below.
+            Required fields are indicated with a <span style="color: red;">*</span>. </p> <!--Found Span on mdn to colour a single section within a <p>-->
+        <picture>
+            <source srcset="ContactusImg2.jpg" media="(max-width: 850px)">
+            <img src="gettyimages-1437821111-612x612.jpg" alt="">
+        </picture>
+
+    </section>
+    <form>
+        <h3 aria-labelledby="formtitle">Enquiries Form</h3>
+        <label for="name">Name<span style="color: red;">*</span></label>
+        <br>
+        <input id="name" type="text" name="name" required aria-required="true">
+
+        <br>
+        <br>
+
+        <label for="email">Email Address<span style="color: red;">*</span></label>
+        <br>
+        <input id="email" type="email" name="email" required aria-required="true">
+
+        <br>
+        <br>
+
+        <label for="phonenumber">Contact Number<span style="color: red;">*</span></label>
+        <br>
+        <input id="phonenumber" type="number" required aria-required="true">
+        <br>
+        <br>
+
+        <label for="contactreason">Reason for Contact<span style="color: red;">*</span></label>
+        <br>
+        <select id="contactreason" required aria-required="true">
+            <option></option>                                       <!--Default Blank, Forces them to Pick something-->
+            <option value="orderchase">Where is my Order?</option>
+            <option value="productquery">Product Query</option>
+            <option value="complaint">Complaint</option>
+            <option value="general">General Query</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="querymessage">Message<span style="color: red;">*</span></label>
+        <br>
+        <textarea id="querymessage" placeholder="Your Message..." required aria-required="true"></textarea>
+
+        <br>
+        <br>
+
+        <button class="btn-success" type="submit" name="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>We aim to respond within 2 working days. If you need to update your enquiry please email <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
